@@ -66,19 +66,19 @@ function ProductSales({}: {}) {
                                     </div>
                                     <div className="mgp-quality__features">
                                         <div className="mgp-quality__feature-group">
-                                            <Reveal effect="fadeInLeft" duration={500} delay={400}>
+                                            <Reveal effect="fadeInDown" duration={500} delay={400}>
                                                 <h4 className="mgp-quality__feature-title">Confortables mais sûrs.</h4>
                                             </Reveal>
                                             <p className="mgp-quality__feature-text">Deux couches de propylène sont là pour réduire le passage des éléments extérieur nocifs.</p>
                                         </div>
                                         <div className="mgp-quality__feature-group">
-                                            <Reveal effect="fadeInLeft" duration={500} delay={500}>
+                                            <Reveal effect="fadeInDown" duration={500} delay={500}>
                                                 <h4 className="mgp-quality__feature-title">Filtration garantie.</h4>
                                             </Reveal>
                                             <p className="mgp-quality__feature-text">Jusqu'à 15 lavages,<br/>en accord avec<br/>la législation Française.</p>
                                         </div>
                                         <div className="mgp-quality__feature-group">
-                                            <Reveal effect="fadeInLeft" duration={500} delay={600}>
+                                            <Reveal effect="fadeInDown" duration={500} delay={600}>
                                                 <h4 className="mgp-quality__feature-title">Origine controlée.</h4>
                                             </Reveal>
                                             <p className="mgp-quality__feature-text">Nos masques sont fabriqués<br/>et certifiés en Espagne</p>

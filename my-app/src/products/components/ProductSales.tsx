@@ -5,8 +5,7 @@ import gsap from 'gsap';
 const Style = styled.div`
 
 
-    width: 100%;`
-
+    `
 
 function useOnScreen(ref: any, rootMargin = '0px') {
     // State and setter for storing whether element is visible
@@ -67,14 +66,16 @@ function ProductSales({}: {}) {
             <main>
                 <div className="product">
 
-                    <div className="product__header u-padding-horizontal-default panels">
-                        <div className="u-container">
-                            <div className="product__header-logo">
-                                <img className="logo" src="LOGO/LOGO PNG/MGP NOIR.png" alt=""/>
+                    <div className="product__header panels">
+                        <div className="wrapper" style={{backgroundImage: "url('IMAGES/VISUEL 6 copie.png')"}}>
+                            <div className="u-container">
+                                <div className="product__header-logo">
+                                    <img className="logo" src="LOGO/LOGO PNG/MGP NOIR.png" alt=""/>
+                                </div>
+                                <h1 className="product__header-title">Masques<br/>Grand<br/>Public.</h1>
+                                <p className="product__header-text">Choisissez vos masques.<br/>Invitez vos proches.<br/>Faîtes baissez leur prix.</p>
+                                <button className="product__header-purchase">COMMANDER</button>
                             </div>
-                            <h1 className="product__header-title">Masques<br/>Grand<br/>Public.</h1>
-                            <p className="product__header-text">Choisissez vos masques.<br/>Invitez vos proches.<br/>Faîtes baissez leur prix.</p>
-                            <button className="product__header-purchase">COMMANDER</button>
                         </div>
                     </div>
 

@@ -66,9 +66,15 @@
 
     top:0;
     z-index:-99; */
-  height: 100vh;
-  padding-top: 3rem !important;
-  background: lightgray;
+  min-height: 100vh;
+  background: #f9f9f9;
+}
+.wrapper {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 3rem !important;
+  min-height: 100vh;
 }
 .product__header-logo {
   border-top: 2.4px solid black;
@@ -86,6 +92,7 @@
   margin-bottom: 3rem;
 }
 .product__header-purchase {
+  border: none;
   font-size: 1.8rem;
   color: white;
   font-weight: bold;
@@ -118,7 +125,8 @@
 .mgp-quality__features {
   margin-top: 6rem;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+  grid-row-gap: 3rem;
   grid-column-gap: 2rem;
 }
 .mgp-quality__feature-title {
@@ -136,7 +144,7 @@
 }
 .mgp-gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+  grid-template-columns: 1fr 1fr;
   grid-column-gap: 2rem;
   grid-row-gap: 2rem;
   padding-top: 3.5rem;
@@ -150,13 +158,66 @@
   border-bottom: 1px solid black;
 }
 .u-padding-horizontal-default {
-  padding: 0 1.5rem;
+  padding: 0 3rem;
 }
 .u-container {
-  max-width: 1000px;
-  margin-left: auto;
-  margin-right: auto;
   overflow-x: visible;
   z-index: 100;
+}
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px 
+*/
+
+@media (min-width: 1025px) {
+  .u-container {
+    margin-left: 20rem;
+    margin-right: 20rem;
+  }
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .u-container {
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .u-container {
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .mgp-gallery > * {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
 }
 /*# sourceMappingURL=ProductPage.css.map */

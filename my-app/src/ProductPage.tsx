@@ -10,35 +10,6 @@ import {RadioChangeEvent} from "antd/es/radio";
 
 // @ts-ignore
 const Style = styled.div`
-    width: 100%;
-  .logo{
-      margin-right: 70%;
-      width: 300px;
-  }
-  .full-image{
-    width: 100%
-  }
-  h1{
-        font-size: 150px !important;
-    }
-    h2{
-        font-size: 100px !important;
-    }
-    h3{
-        font-size: 60px !important;
-    }
-    h1,h2,h3{
-        color: black !important;
-        text-align: left !important;
-        width: 100%;
-        line-height: normal !important; 
-    }
-    .black *{
-        color: white !important;
-    }
-    .description{
-        font-size: 30px;
-    }
   
     `
 const ProductContainer = styled.div`
@@ -48,7 +19,7 @@ const ProductContainer = styled.div`
 function useOnScreen(ref: any, rootMargin = '0px') {
     // State and setter for storing whether element is visible
     const [isIntersecting, setIntersecting] = useState(false);
-  
+
     useEffect(() => {
       const observer = new IntersectionObserver(
         ([entry]) => {
@@ -66,7 +37,7 @@ function useOnScreen(ref: any, rootMargin = '0px') {
         observer.unobserve(ref.current);
       };
     }, []); // Empty array ensures that effect is only run on mount and unmount
-  
+
     return isIntersecting;
   }
 
@@ -98,7 +69,7 @@ function ProductPage() {
         })
     }
 
-    
+
     onScreen ?
     fadeIn(".fadeIn")
     : fadeOut(".fadeIn")

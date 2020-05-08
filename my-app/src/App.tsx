@@ -1,7 +1,8 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import ProductPage from "./ProductPage";
+import './antd.css'
+import ProductPage from "./products/ProductPage";
+
 
 function App() {
   return (

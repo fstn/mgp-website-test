@@ -12,11 +12,10 @@
     "@types/react-dom": "^16.9.0",
     "@types/styled-components": "^5.1.0",
     "antd": "^4.2.0",
-    "gsap": "^3.2.6",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-reveal": "^1.2.2",
     "react-scripts": "3.4.1",
-    "react-use": "^14.2.0",
     "styled-components": "^5.1.0",
     "typescript": "~3.7.2"
   },

@@ -66,15 +66,25 @@
 
     top:0;
     z-index:-99; */
+  position: relative;
   min-height: 100vh;
   background: #f9f9f9;
 }
+.product__header-background {
+  position: absolute;
+  object-fit: cover;
+  width: 100vw;
+  height: 100%;
+  z-index: 99;
+}
 .wrapper {
+  position: relative;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   padding: 3rem !important;
   min-height: 100vh;
+  z-index: 100;
 }
 .product__header-logo {
   border-top: 2.4px solid black;
@@ -164,56 +174,108 @@
   overflow-x: visible;
   z-index: 100;
 }
+
+/* Animations */
+.fadeIn {
+  opacity: 0;
+  animation-name: fadeIn;
+  animation-fill-mode: both;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1
+  }
+}
+.fadeInDown {
+  opacity: 0;
+  animation-name: fadeInDown;
+  animation-fill-mode: both;
+}
+@keyframes fadeInDown {
+  from {
+    transform: translate3d(0,-40px,0);
+    opacity: 0;
+  }
+  to {
+    transform: translate3d(0,0,0);
+    opacity: 1
+  }
+}
+.fadeInUp {
+  opacity: 0;
+  animation-name: fadeInUp;
+  animation-fill-mode: both;
+}
+@keyframes fadeInUp {
+  from {
+    transform: translate3d(0,40px,0);
+    opacity: 0;
+  }
+  to {
+    transform: translate3d(0,0,0);
+    opacity: 1
+  }
+}
+.fadeInLeft {
+  animation-name: fadeInLeft;
+  animation-fill-mode: both;
+}
+@keyframes fadeInLeft {
+  from {
+    transform: translate3d(-20px,0,0);
+    opacity: 0;
+  }
+
+  to {
+    transform: translate3d(0,0,0);
+    opacity: 1
+  }
+}
+
 /* 
   ##Device = Laptops, Desktops
-  ##Screen = B/w 1025px 
+  ##Screen = B/w from 1025px 
 */
-
 @media (min-width: 1025px) {
   .u-container {
     margin-left: 20rem;
     margin-right: 20rem;
   }
 }
-
 /* 
   ##Device = Tablets, Ipads (portrait)
   ##Screen = B/w 768px to 1024px
 */
-
 @media (min-width: 768px) and (max-width: 1024px) {
   .u-container {
     margin-left: 5rem;
     margin-right: 5rem;
   }
 }
-
 /* 
   ##Device = Tablets, Ipads (landscape)
   ##Screen = B/w 768px to 1024px
 */
-
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   .u-container {
     margin-left: 5rem;
     margin-right: 5rem;
   }
 }
-
 /* 
   ##Device = Low Resolution Tablets, Mobiles (Landscape)
   ##Screen = B/w 481px to 767px
 */
-
 @media (min-width: 481px) and (max-width: 767px) {
   
 }
-
 /* 
   ##Device = Most of the Smartphones Mobiles (Portrait)
   ##Screen = B/w 320px to 479px
 */
-
 @media (min-width: 320px) and (max-width: 480px) {
   .mgp-gallery > * {
     grid-column-start: 1;

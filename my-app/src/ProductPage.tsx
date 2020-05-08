@@ -1,6 +1,4 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { useIntersection } from 'react-use';
-import gsap from 'gsap';
 import styled from 'styled-components';
 
 import {Button, InputNumber, Radio} from "antd";
@@ -16,63 +14,12 @@ const ProductContainer = styled.div`
  
 `
 
-function useOnScreen(ref: any, rootMargin = '0px') {
-    // State and setter for storing whether element is visible
-    const [isIntersecting, setIntersecting] = useState(false);
-
-    useEffect(() => {
-      const observer = new IntersectionObserver(
-        ([entry]) => {
-          // Update our state when observer callback fires
-          setIntersecting(entry.isIntersecting);
-        },
-        {
-          rootMargin
-        }
-      );
-      if (ref.current) {
-        observer.observe(ref.current);
-      }
-      return () => {
-        observer.unobserve(ref.current);
-      };
-    }, []); // Empty array ensures that effect is only run on mount and unmount
-
-    return isIntersecting;
-  }
-
 
 function ProductPage() {
     const [quantity, setQuantity] = useState<any>(1)
     const [selectedPack, setSelectedPack] = useState<any>("white")
     const [visible, setVisible] = useState<any>(false)
     const selectProductDiv: any = React.createRef()
-    const sectionRef = useRef<HTMLDivElement>(null);
-    const onScreen = useOnScreen(sectionRef, '-300px');
-
-    const fadeIn = (element: String) => {
-        gsap.to(element, 1, {
-            opacity: 1,
-            y: 0,
-            ease: 'power4.out',
-            stagger: {
-                amount: .3
-            }
-        })
-    }
-
-    const fadeOut = (element: String) => {
-        gsap.to(element, 1, {
-            opacity: 0,
-            y: -20,
-            ease: 'power4.out',
-        })
-    }
-
-
-    onScreen ?
-    fadeIn(".fadeIn")
-    : fadeOut(".fadeIn")
 
     const selectPack = (e: RadioChangeEvent) => {
         setSelectedPack(e.target.value)
@@ -96,12 +43,12 @@ function ProductPage() {
                 </div>
 
 
-                <div className="product-content" ref={sectionRef}>
+                <div className="product-content">
                     <div className="u-container u-padding-horizontal-default panels">
 
                         <div className="product__mgp-quantity">
                             <div className="mgp-quantity page-section">
-                                <h2 className="page-section__title fadeIn">Des masques en grande quantité.</h2>
+                                <h2 className="page-section__title">Des masques en grande quantité.</h2>
                                 <p className="page-section__text ">C'est le défi qui nous attend maintenant pour faire face au Covid19.</p>
                                 <p className="page-section__text ">Des masques pour se protéger et protéger les autres</p>
                                 <p className="page-section__text "><span className="u-underline">100 000</span>: le nombre de masques que nous pouvons produire chaque jour.</p>

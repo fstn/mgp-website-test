@@ -238,7 +238,7 @@ function ProductSales({}: {}) {
                                         </Reveal>
                                         <div className="group-order__price-table">
                                             <div className="price-group">
-                                                <p>2 personne :</p>
+                                                <p>2 personnes :</p>
                                                 <p><span className="price">6,50 €</span> / masque.</p>
                                             </div>
                                             <div className="price-group">

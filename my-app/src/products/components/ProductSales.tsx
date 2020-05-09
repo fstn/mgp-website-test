@@ -115,7 +115,7 @@ function ProductSales({}: {}) {
                                         Public.
                                     </Reveal>
                                 </h1>
-                                <p className="product__header-text">Choisissez vos masques.<br/>Invitez vos proches.<br/>Faîtes baissez leur prix.</p>
+                                <p className="product__header-text">Choisissez vos masques.<br/>Invitez vos proches.<br/>Faîtes baisser leur prix.</p>
                                 <button className="product__header-purchase">COMMANDER</button>
                             </div>
                         </div>

@@ -87,18 +87,24 @@
 .product__header-text {
   font-size: 2.3rem;
   margin-bottom: 3rem;
+  line-height: 3rem;
+}
+.product__header-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .product__header-purchase {
   border: none;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   color: white;
   font-weight: bold;
-  width: 27rem;
+  min-width: 33rem;
   background: black;
-  height: 5rem;
+  height: 4.5rem;
 }
 .logo {
-  width: 37rem;
+  width: 38rem;
 }
 .product-content {
   position: relative;
@@ -149,13 +155,36 @@
   padding-top: 3.5rem;
   padding-bottom: 12rem;
 }
-.mgp-group-purchase__prices {
+.mask-image__info > * {
+  margin: 0;
+  padding-left: 25rem;
+  font-size: 0.85rem;
+}
+.mgp-group-purchase__price-info {
   margin-top: 3rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-template-columns: 30% 1fr;
   grid-row-gap: 1rem;
-  grid-column-gap: 5rem;
+  grid-column-gap: 3rem;
   font-size: 2.6rem;
+}
+.price-table__order-title {
+  font-size: 2.37rem;
+}
+.group-order__price-table {
+  display: grid;
+  grid-template-columns: 45% 1fr;
+  grid-row-gap: 2rem;
+  grid-column-gap: 3rem;
+  font-size: 2.6rem;
+}
+.price-group > * {
+  margin: 0;
+  font-size: 1.6rem;
+}
+.price {
+  font-size: 2.4rem;
+  font-weight: bold;
 }
 .u-font-light {
   font-weight: 200;
@@ -169,6 +198,9 @@
 .u-bottom-border {
   border-bottom: 2.4px solid black;
 }
+.u-no-bottom-border {
+  border-bottom: none;
+}
 .u-underline {
   padding-bottom: 2px;
   border-bottom: 1px solid black;
@@ -180,8 +212,35 @@
   overflow-x: visible;
   z-index: 100;
 }
+.u-background-black {
+  background: black;
+}
+.u-white-background {
+  background: white;
+}
+.u-black-font {
+  color: black;
+}
+.u-white-font {
+  color: white;
+}
 
 /* Animations */
+.fadeInUp {
+  animation-name: fadeInUp;
+  animation-fill-mode: both;
+}
+@keyframes fadeInUp {
+  from {
+    transform: translate3d(0,40px,0);
+    opacity: 0;
+  }
+
+  to {
+    transform: translate3d(0,0,0);
+    opacity: 1
+  }
+}
 .fadeIn {
   opacity: 0;
   animation-name: fadeIn;
@@ -210,44 +269,38 @@
     opacity: 1
   }
 }
-/* 
-  ##Device = Laptops, Desktops
-  ##Screen = B/w from 1025px 
-*/
-@media (min-width: 1025px) {
-  .u-container {
-    margin-left: 19rem;
-    margin-right: 19rem;
+.fadeInDown {
+  animation-name: fadeInDown;
+  animation-fill-mode: both;
+}
+@keyframes fadeInDown {
+  from {
+    transform: translate3d(0,-40px,0);
+    opacity: 0;
+  }
+
+  to {
+    transform: translate3d(0,0,0);
+    opacity: 1
   }
 }
-/* 
-  ##Device = Tablets, Ipads (portrait)
-  ##Screen = B/w 768px to 1024px
-*/
-@media (min-width: 768px) and (max-width: 1024px) {
-  .u-container {
-    margin-left: 5rem;
-    margin-right: 5rem;
+@media (max-width: 700px) {
+  .group-order__price-table {
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  }
+  .mgp-group-purchase__price-info {
+    grid-template-columns: 1fr;
+  }
+  .product__header-buttons {
+    display: block;
+    width: 100%;
+  }
+  .product__header-purchase {
+    margin-right: 1rem;
+    margin-top: 2rem;
   }
 }
-/* 
-  ##Device = Tablets, Ipads (landscape)
-  ##Screen = B/w 768px to 1024px
-*/
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  .u-container {
-    margin-left: 5rem;
-    margin-right: 5rem;
-  }
-}
-/* 
-  ##Device = Low Resolution Tablets, Mobiles (Landscape)
-  ##Screen = B/w 481px to 767px
-*/
-@media (min-width: 481px) and (max-width: 767px) {
-  
-}
-/* 
+/*
   ##Device = Most of the Smartphones Mobiles (Portrait)
   ##Screen = B/w 320px to 479px
 */

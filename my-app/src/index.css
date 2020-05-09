@@ -7,7 +7,7 @@ body, html{
   -moz-osx-font-smoothing: grayscale;
   line-height: 1.6;
   font-size: 10px;
-  background:#ebebeb;
+  background: #f9f9f9;
 }
 
 * {
@@ -26,4 +26,10 @@ hr{
 img {
   max-width: 100%;
   display: block;
+}
+
+@media (min-width: 1500px) {
+  body, html{
+    font-size: 0.7vw;
+  }
 }

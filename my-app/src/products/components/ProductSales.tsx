@@ -12,8 +12,8 @@ function useWindowSize() {
     
     function getSize() {
         return {
-        width: isClient ? window.outerWidth : undefined,
-        height: isClient ? window.outerHeight : undefined
+        width: isClient ? window.innerWidth : undefined,
+        height: isClient ? window.innerHeight : undefined
         };
     }
     
@@ -130,7 +130,7 @@ function ProductSales({}: {}) {
                             </div>
 
                             <div className="u-container product__mgp-gallery u-padding-horizontal-default">
-                                <div className="mgp-gallery u-bottom-border">
+                                <div className="mgp-gallery">
                                     <Reveal effect="fadeInUp" duration={500}>
                                         <div className="mask-image">
                                             <img src="IMAGES/MASKS/VISUEL NOIR MOSAIC.jpg" alt=""/>
@@ -167,12 +167,12 @@ function ProductSales({}: {}) {
                                             </div>
                                         </div>
                                     </Reveal>
-                                    {/* <Reveal effect="fadeInUp" duration={500}>
+                                    <Reveal effect="fadeInUp" duration={500}>
                                         <div className="mask-image">
                                             <img src="IMAGES/MASKS/VISUEL NOIR ALEATOIRE.jpg" alt=""/>
                                             <div className="mask-image__info">
-                                                <h6></h6>
-                                                <p></p>
+                                                <h6>MASQUE SMALL LOGO</h6>
+                                                <p>couleur : NOIR</p>
                                             </div>
                                         </div>
                                     </Reveal>
@@ -180,8 +180,8 @@ function ProductSales({}: {}) {
                                         <div className="mask-image">
                                             <img src="IMAGES/MASKS/VISUEL BLANC MOSAIC.jpg" alt=""/>
                                             <div className="mask-image__info">
-                                                <h6></h6>
-                                                <p></p>
+                                                <h6>MASQUE PATTERN</h6>
+                                                <p>couleur : BLANC</p>
                                             </div>
                                         </div>
                                     </Reveal>
@@ -189,8 +189,8 @@ function ProductSales({}: {}) {
                                         <div className="mask-image">
                                             <img src="IMAGES/MASKS/VISUEL BLANC CLOSE UP.jpg" alt=""/>
                                             <div className="mask-image__info">
-                                                <h6></h6>
-                                                <p></p>
+                                                <h6>MASQUE BIG LOGO</h6>
+                                                <p>couleur : BLANC</p>
                                             </div>
                                         </div>
                                     </Reveal>
@@ -198,16 +198,16 @@ function ProductSales({}: {}) {
                                         <div className="mask-image">
                                             <img src="IMAGES/MASKS/VISUEL NOIR CLASSIQUE.jpg" alt=""/>
                                             <div className="mask-image__info">
-                                                <h6></h6>
-                                                <p></p>
+                                                <h6>MASQUE SMALL LOGO</h6>
+                                                <p>couleur : NOIR</p>
                                             </div>
                                         </div>
-                                    </Reveal> */}
+                                    </Reveal>
                                 </div>
                             </div>
 
-                            <div className="u-container product__mgp-everyone u-padding-horizontal-default">
-                                <div className="mgp-everyone page-section u-no-bottom-border">
+                            <div className="product__mgp-everyone page-section u-no-padding-bottom u-background-black u-grey-font u-padding-horizontal-default">
+                                <div className="mgp-everyone u-bottom-border u-padding-bottom u-border-grey u-container">
                                     <Reveal effect="fadeInDown">
                                         <h2 className="page-section__title">En faire profiter<br/>le plus grand nombre</h2>
                                     </Reveal>
@@ -216,7 +216,7 @@ function ProductSales({}: {}) {
                                 </div>
                             </div>
 
-                            <div className="product__mgp-group-purchase page-section u-background-black u-white-font">
+                            <div className="product__mgp-group-purchase page-section u-background-black u-grey-font">
                                 <div className="mgp-group-purchase__header u-container u-padding-horizontal-default">
                                     <Reveal effect="fadeInDown">
                                         <h2 className="page-section__title">Plus vous êtes nombreux,<br/> plus c'est avantageux.</h2>

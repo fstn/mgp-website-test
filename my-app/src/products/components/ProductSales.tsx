@@ -44,14 +44,14 @@ function ProductSales({}: {}) {
             <main>
                 <div className="product">
                     <Reveal effect="fadeIn" duration={1500} delay={300}>
-                        <img className="product__header-background" src="IMAGES/VISUEL 6 copie-min.png" style={{ height: size.height, transition: "height 2s"}} alt=""/>
+                        <img className="product__header-background" src="/IMAGES/VISUEL 6 copie-min.png" style={{ height: size.height, transition: "height 2s"}} alt=""/>
                     </Reveal>
 
                     <div className="product__header">
                         <div className="wrapper">
                             <div className="u-container">
                                 <div className="product__header-logo">
-                                    <img className="logo" src="LOGO/LOGO PNG/MGP NOIR-min.png" alt=""/>
+                                    <img className="logo" src="/LOGO/LOGO PNG/MGP NOIR-min.png" alt=""/>
                                 </div>
                                 <h1 className="product__header-title">
                                     <Reveal effect="fadeInLeft" duration={500} delay={900}>
@@ -131,7 +131,7 @@ function ProductSales({}: {}) {
                             <div className="mgp-gallery">
                                 <Reveal effect="fadeInUp" duration={500}>
                                     <div className="mask-image">
-                                        <img src="IMAGES/MASKS/VISUEL NOIR MOSAIC.jpg" alt=""/>
+                                        <img src="/IMAGES/MASKS/VISUEL NOIR MOSAIC.jpg" alt=""/>
                                         <div className="mask-image__info">
                                             <h6>MASQUE PATTERN</h6>
                                             <p>couleur : NOIR</p>
@@ -140,7 +140,7 @@ function ProductSales({}: {}) {
                                 </Reveal>
                                 <Reveal effect="fadeInUp" duration={500} delay={400}>
                                     <div className="mask-image">
-                                        <img src="IMAGES/MASKS/VISUEL BLANC CLASSIQUE.jpg" alt=""/>
+                                        <img src="/IMAGES/MASKS/VISUEL BLANC CLASSIQUE.jpg" alt=""/>
                                         <div className="mask-image__info">
                                             <h6>MASQUE SMALL LOGO</h6>
                                             <p>couleur : BLANC</p>
@@ -149,7 +149,7 @@ function ProductSales({}: {}) {
                                 </Reveal>
                                 <Reveal effect="fadeInUp" duration={500}>
                                     <div className="mask-image">
-                                        <img src="IMAGES/MASKS/VISUEL BLANC ALEATOIRE.jpg" alt=""/>
+                                        <img src="/IMAGES/MASKS/VISUEL BLANC ALEATOIRE.jpg" alt=""/>
                                         <div className="mask-image__info">
                                             <h6>MASQUE SMALL LOGO</h6>
                                             <p>couleur : BLANC</p>
@@ -158,7 +158,7 @@ function ProductSales({}: {}) {
                                 </Reveal>
                                 <Reveal effect="fadeInUp" duration={500} delay={400}>
                                     <div className="mask-image">
-                                        <img src="IMAGES/MASKS/VISUEL NOIR CLOSE UP.jpg" alt=""/>
+                                        <img src="/IMAGES/MASKS/VISUEL NOIR CLOSE UP.jpg" alt=""/>
                                         <div className="mask-image__info">
                                             <h6>MASQUE BIG LOGO</h6>
                                             <p>couleur : NOIR</p>
@@ -167,7 +167,7 @@ function ProductSales({}: {}) {
                                 </Reveal>
                                 <Reveal effect="fadeInUp" duration={500}>
                                     <div className="mask-image">
-                                        <img src="IMAGES/MASKS/VISUEL NOIR ALEATOIRE.jpg" alt=""/>
+                                        <img src="/IMAGES/MASKS/VISUEL NOIR ALEATOIRE.jpg" alt=""/>
                                         <div className="mask-image__info">
                                             <h6>MASQUE SMALL LOGO</h6>
                                             <p>couleur : NOIR</p>
@@ -176,7 +176,7 @@ function ProductSales({}: {}) {
                                 </Reveal>
                                 <Reveal effect="fadeInUp" duration={500} delay={400}>
                                     <div className="mask-image">
-                                        <img src="IMAGES/MASKS/VISUEL BLANC MOSAIC.jpg" alt=""/>
+                                        <img src="/IMAGES/MASKS/VISUEL BLANC MOSAIC.jpg" alt=""/>
                                         <div className="mask-image__info">
                                             <h6>MASQUE PATTERN</h6>
                                             <p>couleur : BLANC</p>
@@ -185,7 +185,7 @@ function ProductSales({}: {}) {
                                 </Reveal>
                                 <Reveal effect="fadeInUp" duration={500}>
                                     <div className="mask-image">
-                                        <img src="IMAGES/MASKS/VISUEL BLANC CLOSE UP.jpg" alt=""/>
+                                        <img src="/IMAGES/MASKS/VISUEL BLANC CLOSE UP.jpg" alt=""/>
                                         <div className="mask-image__info">
                                             <h6>MASQUE BIG LOGO</h6>
                                             <p>couleur : BLANC</p>
@@ -194,7 +194,7 @@ function ProductSales({}: {}) {
                                 </Reveal>
                                 <Reveal effect="fadeInUp" duration={500} delay={400}>
                                     <div className="mask-image">
-                                        <img src="IMAGES/MASKS/VISUEL NOIR CLASSIQUE.jpg" alt=""/>
+                                        <img src="/IMAGES/MASKS/VISUEL NOIR CLASSIQUE.jpg" alt=""/>
                                         <div className="mask-image__info">
                                             <h6>MASQUE SMALL LOGO</h6>
                                             <p>couleur : NOIR</p>

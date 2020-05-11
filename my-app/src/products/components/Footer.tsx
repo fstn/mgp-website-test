@@ -5,7 +5,7 @@ function Footer() {
     return (
         <footer className="u-padding-horizontal-default">
             <div className="footer u-container">
-                <img src="/LOGO/LOGO PNG/MGP BLANC.png" className="footer__logo" alt=""/>
+                <img src="/LOGO/LOGO PNG/MGP GRIS-min.png" className="footer__logo" alt=""/>
                 <div className="footer__partnership">
                     <p className="u-no-margin">En partenariat avec : </p>
                     <p>Association X.</p>

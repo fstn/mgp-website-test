@@ -204,7 +204,7 @@ function ProductSales({}: {}) {
                             </div>
                         </div>
 
-                        <div className="product__mgp-everyone page-section u-no-padding-bottom u-background-black u-grey-font u-padding-horizontal-default">
+                        <div className="product__mgp-everyone page-section u-no-padding-bottom u-background-black u-font-light-grey u-padding-horizontal-default">
                             <div className="mgp-everyone u-bottom-border u-padding-bottom u-border-grey u-container">
                                 <Reveal effect="fadeInDown">
                                     <h2 className="page-section__title">En faire profiter<br/>le plus grand nombre.</h2>
@@ -213,7 +213,7 @@ function ProductSales({}: {}) {
                             </div>
                         </div>
 
-                        <div className="product__mgp-group-purchase page-section u-background-black u-grey-font">
+                        <div className="product__mgp-group-purchase page-section u-background-black u-font-light-grey">
                             <div className="mgp-group-purchase__header u-container u-padding-horizontal-default">
                                 <Reveal effect="fadeInDown">
                                     <h2 className="page-section__title">Plus vous êtes nombreux,<br/> plus c'est avantageux.</h2>
@@ -277,7 +277,7 @@ function ProductSales({}: {}) {
                             </div>
                         </div>
                     </div>
-                </div>
+                </div>                
             </main>
         </Style>
     );

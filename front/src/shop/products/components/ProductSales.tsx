@@ -60,8 +60,33 @@ function ProductSales() {
                             le meilleur masque<br/>
                             grand public possible : le juste équilibre entre <span className="u-underline">protection, confort et design.</span>
                         </p>
+                        <div className="mgp-quality__features u-margin-6-top">
+                            <div className="mgp-feature-group">
+                                <Reveal effect="fadeInDown">
+                                    <h4 className="mgp-feature-title fadeFeature1">Filtration garantie.</h4>
+                                </Reveal>
+                                <p className="mgp-feature-text">Tous nos masques assurent une filtration garantie jusqu’à 15 lavages, en accord avec la législation Française.</p>
+                            </div>
+                            <div className="mgp-feature-group">
+                                <Reveal effect="fadeInDown">
+                                    <h4 className="mgp-feature-title fadeFeature2">Origine controlée.</h4>
+                                </Reveal>
+                                <p className="mgp-feature-text">Nos masques sont fabriqués en Espagne.</p>
+                            </div>
+                            <div className="mgp-feature-group">
+                                <Reveal effect="fadeInDown">
+                                    <h4 className="mgp-feature-title fadeFeature3">Un oeil sur l’avenir.</h4>
+                                </Reveal>
+                                <p className="mgp-feature-text">Nos masques sont lavables, réutilisables et recyclables.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-                        <Reveal effect="fadeInDown">
+            <div className="u-container product__mgp-design u-padding-horizontal-default">
+                <div className="mgp-design page-section">
+                    <Reveal effect="fadeInDown">
                             <h2 className="page-section__title">Pensés pour le plus grand nombre.</h2>
                         </Reveal>
                         <p className="page-section__text">
@@ -72,13 +97,14 @@ function ProductSales() {
                             à tous.
                         </p>
 
-                        <img src="/IMAGES/black_90.jpg" alt=""/>
-                    </div>
+                        <img className="u-margin-6-top" src="/IMAGES/black_90.jpg" alt=""/>
                 </div>
             </div>
-            <div className="u-container product__mgp-quality u-padding-horizontal-default">
-                <div className="mgp-quality page-section">
-                    <div className="mgp-quality__header">
+
+
+            <div className="u-container product__mgp-variants u-padding-horizontal-default">
+                <div className="mgp-variants page-section">
+                    <div className="mgp-variants__header">
                         <Reveal effect="fadeInDown">
                             <h2 className="page-section__title">Un masque. Deux
                                 possibilités.</h2>
@@ -88,12 +114,12 @@ function ProductSales() {
                             sommes
                             pas tous pareils.
                             Voilà pourquoi MGP vous propose deux lignes bien différentes.</p>
-                        <div className="grid-column-2">
+                        <div className="mgp-variants__list u-margin-6-top">
                             <div>
                                 <Reveal effect="fadeInDown">
-                                    <h3 className="">MGP Bamboo</h3>
+                                    <h3 className="mgp-variant-title">MGP Bamboo</h3>
                                 </Reveal>
-                                <p className="">
+                                <p className="mgp-variant-text">
                                     Respirants et confortables, les masques MGP Bamboo sont composés de 4
                                     couches de
                                     viscose de bambou biologique pour un toucher particulièrement doux et de
@@ -103,9 +129,9 @@ function ProductSales() {
                             </div>
                             <div>
                                 <Reveal effect="fadeInDown">
-                                    <h3 className="">MGP B&W</h3>
+                                    <h3 className="mgp-variant-title">MGP B&W</h3>
                                 </Reveal>
-                                <p className="">
+                                <p className="mgp-variant-text">
                                     Pour vous le masque c’est plutôt noir ou plutôt blanc ? Logo Big ou logo
                                     Small ?
                                     Pattern ?
@@ -198,33 +224,6 @@ function ProductSales() {
                 </div>
             </div>
 
-            <div className="u-container u-padding-horizontal-default">
-                <div className="page-section">
-                    <div className="grid-column-3">
-                        <div>
-                            <Reveal effect="fadeInDown">
-                                <h3 className="page-section__title">Filtration garantie.</h3>
-                            </Reveal>
-                            <p className="page-section__text">
-                                Tous nos masques assurent une filtration garantie jusqu’à 15 lavages, en accord avec la législation Française.</p>
-                        </div>
-                        <div>
-                            <Reveal effect="fadeInDown">
-                                <h3 className="page-section__title">Origine controlée.</h3>
-                            </Reveal>
-                            <p className="page-section__text">
-                                Nos masques sont fabriqués en Espagne.</p>
-                        </div>
-                        <div>
-                            <Reveal effect="fadeInDown">
-                                <h3 className="page-section__title">Un oeil sur l’avenir.</h3>
-                            </Reveal>
-                            <p className="page-section__text">
-                                Nos masques sont lavables, réutilisables et recyclables.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
             <div
                 className="product__mgp-everyone page-section u-no-padding-bottom u-background-black u-font-light-grey u-padding-horizontal-default">
                 <div className="mgp-everyone u-bottom-border u-padding-bottom u-border-grey u-container">
@@ -232,10 +231,7 @@ function ProductSales() {
                         <h2 className="page-section__title">En faire profiter<br/>le plus grand nombre.</h2>
                     </Reveal>
                     <p className="page-section__text">Un masque grand public c’est aussi et surtout un masque au prix accessible.
-
-                        Créez une commande “groupe” et faîtes baisser le prix de votre masque
-                        <span
-                            className="u-underline u-underline-white">jusqu'à 4 euros l'unité</span>.</p>
+                        Créez une commande “groupe” et faîtes baisser le prix de votre masque <span className="u-underline u-underline-white">jusqu'à 4 euros l'unité</span>.</p>
                 </div>
             </div>
 

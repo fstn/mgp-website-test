@@ -1,0 +1,90 @@
+body, html {
+    margin: 0;
+    /* width: 100%; */
+    font-family: 'Helvetica Neue',
+    sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 1.6;
+    font-size: 10px;
+    background: #f9f9f9;
+    height: 100%;
+    width: 100%;
+}
+
+#root {
+    height: 100%;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue';
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+hr {
+    width: 100%;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.wrapper {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 3rem !important;
+    min-height: 100vh;
+    z-index: 100;
+}
+
+@media (min-width: 700px) {
+    body, html {
+        font-size: 0.7vw;
+    }
+
+    .u-container {
+        margin-left: 9rem;
+        margin-right: 9rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    body, html {
+        font-size: 0.7vw;
+    }
+
+    .u-container {
+        margin-left: 19rem;
+        margin-right: 19rem;
+    }
+}
+
+@media (max-width: 768px) {
+    body, html {
+        font-size: 8.5px;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+button {
+    cursor: pointer;
+}

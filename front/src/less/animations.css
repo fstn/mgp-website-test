@@ -1,0 +1,69 @@
+@keyframes animeLoading {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.loading {
+  /* This section calls the slideInFromLeft animation we defined above */
+  animation: 2s ease-out 0s 1 animeLoading;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.fadeInLeft {
+  animation-name: fadeInLeft;
+  animation-fill-mode: both;
+}
+@keyframes fadeInLeft {
+  from {
+    transform: translate3d(-20px, 0, 0);
+    opacity: 0;
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+.fadeInDown {
+  animation-name: fadeInDown;
+  animation-fill-mode: both;
+}
+@keyframes fadeInDown {
+  from {
+    transform: translate3d(0, -40px, 0);
+    opacity: 0;
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+/* Animations */
+.fadeInUp {
+  animation-name: fadeInUp;
+  animation-fill-mode: both;
+}
+@keyframes fadeInUp {
+  from {
+    transform: translate3d(0, 40px, 0);
+    opacity: 0;
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+.fadeIn {
+  opacity: 0;
+  animation-name: fadeIn;
+  animation-fill-mode: both;
+}
+/*# sourceMappingURL=animations.css.map */

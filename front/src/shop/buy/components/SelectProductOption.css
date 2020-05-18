@@ -1,0 +1,197 @@
+.ant-input-number-handler-wrap {
+  opacity: 1;
+}
+@media (max-width: 768px) {
+  display: block;
+}
+.product-image {
+  height: fit-content;
+  display: flex;
+  align-content: center;
+  align-items: center;
+}
+.product-image img {
+  width: calc(100% + 40%);
+  min-width: calc(100% + 40%);
+  margin-left: -40%;
+  margin-top: 10px;
+}
+.product-container .ant-form-item {
+  text-align: left;
+}
+.product-container .ant-form-item {
+  margin-bottom: 2px;
+}
+.product-container .option-selector .ant-radio-group,
+.product-container .immediate-selector .ant-radio-group {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 60px;
+  gap: 1em;
+  width: 100%;
+}
+.product-container .option-selector .option-selector-btn,
+.product-container .immediate-selector .option-selector-btn,
+.product-container .option-selector .color-selector-btn,
+.product-container .immediate-selector .color-selector-btn {
+  cursor: pointer;
+  width: 100%;
+}
+.product-container .option-selector .option-selector-btn span,
+.product-container .immediate-selector .option-selector-btn span,
+.product-container .option-selector .color-selector-btn span,
+.product-container .immediate-selector .color-selector-btn span {
+  width: 100%;
+}
+.product-container .color-selector .ant-radio-group {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1em 1em;
+  width: 100% !important;
+  margin-top: -1px;
+}
+.product-container .color-selector .ant-radio-group img {
+  width: 100%;
+}
+.product-container .color-selector .color-selector-btn {
+  cursor: pointer;
+  width: 100%;
+  height: fit-content;
+  padding: 0;
+}
+.product-container .quantity-selector {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1.4fr;
+  grid-template-areas: ". . . .";
+  gap: 1em 1em;
+}
+.product-container .round-color {
+  background-color: #ffffff;
+  height: 32px;
+  width: 32px !important;
+  min-width: 32px !important;
+  display: block;
+  border-radius: 16px;
+  margin: 5px;
+  border: 1px solid #EEE;
+  flex: 0 0 32px;
+}
+.product-container .color-selector-btn__color-container {
+  height: 60px;
+}
+.product-container .ant-radio-button-wrapper {
+  min-width: 100%;
+}
+.product-container .color-selector-btn__color-container {
+  padding-right: 1em;
+  padding-left: 1em;
+}
+.product-container .color-selector-btn__color-container,
+.product-container .option-selector-btn-container,
+.product-container .immediate-selector-btn-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  grid-template-rows: 60px;
+  gap: 1fr;
+  grid-template-areas: "." ".";
+  justify-items: center;
+  align-items: center;
+  font-size: 12px;
+}
+.product-container .color-selector-btn__color-container > *,
+.product-container .option-selector-btn-container > *,
+.product-container .immediate-selector-btn-container > * {
+  width: 100%;
+}
+.product-container .color-selector-btn__color-container small,
+.product-container .option-selector-btn-container small,
+.product-container .immediate-selector-btn-container small {
+  text-align: right;
+  line-height: 1.4;
+  width: 100%;
+}
+.product-container .ant-form-item-label label {
+  font-weight: bold;
+  color: black;
+}
+.product-container .immediate-selector-btn-container {
+  grid-template-columns: 1fr 100px;
+}
+.product-container .quantity-selector-btn,
+.product-container .color-selector-btn,
+.product-container .immediate-selector-btn,
+.product-container .option-selector-btn,
+.product-container .ant-btn,
+.product-container .ant-input-number-input,
+.product-container .ant-input-number {
+  background: transparent;
+  height: 60px;
+  font-size: 12px;
+  width: 100%;
+  text-align: center;
+}
+.product-container .quantity-selector-btn input,
+.product-container .color-selector-btn input,
+.product-container .immediate-selector-btn input,
+.product-container .option-selector-btn input,
+.product-container .ant-btn input,
+.product-container .ant-input-number-input input,
+.product-container .ant-input-number input {
+  margin-left: -20px;
+}
+.product-container .pay-btn {
+  font-size: 18px !important;
+  text-transform: uppercase;
+}
+.product-container .quantity-selector-btn {
+  align-items: center;
+  display: flex;
+  text-align: center;
+  align-content: center;
+  justify-content: center;
+  align-self: center;
+}
+.product-container .quantity-selector .ant-radio-button-wrapper,
+.product-container .color-selector .ant-radio-button-wrapper,
+.product-container .color-selector .ant-radio-button-wrapper,
+.product-container .immediate-selector .ant-radio-button-wrapper {
+  height: 100%;
+}
+.product-container .quantity-selector .quantity-selector-btn :hover,
+.product-container .color-selector .quantity-selector-btn :hover,
+.product-container .color-selector .quantity-selector-btn :hover,
+.product-container .immediate-selector .quantity-selector-btn :hover,
+.product-container .quantity-selector .color-selector-btn :hover,
+.product-container .color-selector .color-selector-btn :hover,
+.product-container .color-selector .color-selector-btn :hover,
+.product-container .immediate-selector .color-selector-btn :hover,
+.product-container .quantity-selector .immediate-selector-btn :hover,
+.product-container .color-selector .immediate-selector-btn :hover,
+.product-container .color-selector .immediate-selector-btn :hover,
+.product-container .immediate-selector .immediate-selector-btn :hover,
+.product-container .quantity-selector .option-selector-btn :hover,
+.product-container .color-selector .option-selector-btn :hover,
+.product-container .color-selector .option-selector-btn :hover,
+.product-container .immediate-selector .option-selector-btn :hover {
+  border: gray;
+}
+.product-container .quantity-selector .ant-radio-button-wrapper,
+.product-container .color-selector .ant-radio-button-wrapper,
+.product-container .color-selector .ant-radio-button-wrapper,
+.product-container .immediate-selector .ant-radio-button-wrapper,
+.product-container .quantity-selector .ant-btn,
+.product-container .color-selector .ant-btn,
+.product-container .color-selector .ant-btn,
+.product-container .immediate-selector .ant-btn,
+.product-container .quantity-selector .ant-input-number,
+.product-container .color-selector .ant-input-number,
+.product-container .color-selector .ant-input-number,
+.product-container .immediate-selector .ant-input-number,
+.product-container .quantity-selector .ant-input-number > *,
+.product-container .color-selector .ant-input-number > *,
+.product-container .color-selector .ant-input-number > *,
+.product-container .immediate-selector .ant-input-number > * {
+  background: transparent;
+}
+/*# sourceMappingURL=SelectProductOption.css.map */

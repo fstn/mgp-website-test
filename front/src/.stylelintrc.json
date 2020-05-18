@@ -1,0 +1,4 @@
+{
+  "extends": "stylelint-config-standard",
+  "max-empty-lines": 3
+}

@@ -1,0 +1,36 @@
+.btn-grey,
+.btn-white,
+.btn-black {
+  padding: 0.4em;
+  height: 36px;
+  border: none !important;
+  min-width: 150px;
+  font-weight: bold !important;
+  border-radius: 0;
+}
+.btn-grey input,
+.btn-white input,
+.btn-black input {
+  background: none;
+  border: none;
+  font-weight: bold !important;
+  text-align: center;
+  font-size: 14px;
+  width: 80px;
+}
+.btn-grey,
+.btn-grey input {
+  background-color: #eee !important;
+  color: black !important;
+}
+.btn-white,
+.btn-white input {
+  background-color: #fff !important;
+  color: black !important;
+}
+.btn-black,
+.btn-black input {
+  background-color: #000 !important;
+  color: white !important;
+}
+/*# sourceMappingURL=btn.css.map */

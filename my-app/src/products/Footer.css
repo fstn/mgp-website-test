@@ -1,39 +1,34 @@
 footer {
-    background: black;
-    position: relative;
-    z-index: 200;
+  background: black;
+  position: relative;
+  z-index: 200;
 }
-
 .footer {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    color: #7c7c7c;
-    background: black;
-    position: relative;
-    z-index: 200;
-    padding: 8rem 0;
-    font-size: 1rem;
-    grid-row-gap: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  color: #7c7c7c;
+  background: black;
+  position: relative;
+  z-index: 200;
+  padding: 8rem 0;
+  font-size: 1rem;
+  grid-row-gap: 2rem;
 }
-
 .footer__logo {
-    width: 11.5rem;
+  width: 11.5rem;
 }
-
 .footer__partnership > * {
-    margin: 0.5rem 0;
+  margin: 0.5rem 0;
 }
-
 .footer__info > * {
-    margin: 0.5rem 0;
+  margin: 0.5rem 0;
 }
-
 .info__social > * {
-    margin: 0.5rem 0;
+  margin: 0.5rem 0;
 }
-
 @media (max-width: 425px) {
-    .footer { 
-        grid-template-columns: 1fr;
-    }
+  .footer {
+    grid-template-columns: 1fr;
+  }
 }
+/*# sourceMappingURL=Footer.css.map */

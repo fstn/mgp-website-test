@@ -1,0 +1,162 @@
+
+.flex {
+  display: flex;
+  width: 100%
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-center {
+  align-items: center;
+  align-content: center;
+  align-self: center;
+}
+
+.flex-justify-center {
+  justify-content: center;
+}
+
+.flex-align-stretch, .flex-stretch {
+  align-items: stretch;
+}
+
+@media (max-width: 768px) {
+
+  .flex-wrap-smartphone {
+    flex-wrap: wrap;
+  }
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-0-1 {
+  flex: 0 1;
+}
+
+.flex-1-1 {
+  flex: 1 1;
+}
+
+.flex-around {
+  justify-content: space-around;
+}
+
+.flex-between {
+  justify-content: space-between;
+}
+
+.loopingFlexGap (@index) when (@index > 0) {
+  .flex-gap-@{index} > * {
+    margin-right: unit(@index, em);
+  }
+  .loopingFlexGap(@index - 1);
+}
+
+.loopingFlexGap(5);
+
+.block {
+  display: block;
+}
+
+.bg-white {
+  background: white;
+}
+
+.padding-1 {
+  padding: 1em;
+}
+
+.margin-1 {
+  margin: 1em;
+}
+
+.margin-t-1 {
+  margin-top: 1em;
+}
+
+
+
+.left-0 {
+  left: 0;
+  position: absolute;
+}
+
+.loopingAbsolute (@index) when (@index >= 0) {
+  .bottom-@{index} {
+    bottom: unit(@index, em);
+    position: absolute;
+  }
+  .left-@{index} {
+    left: unit(@index, em);
+    position: absolute;
+  }
+  .right-@{index} {
+    right: unit(@index, em);
+    position: absolute;
+  }
+  .top-@{index} {
+    top: unit(@index, em);
+    position: absolute;
+  }
+  .loopingAbsolute(@index - 1);
+}
+
+.loopingAbsolute(5);
+
+.loopingBlur (@index) when (@index >= 0) {
+  .blur-@{index} {
+    filter: blur(unit(@index, px));
+  }
+  .loopingBlur(@index - 1);
+}
+
+.loopingBlur(20);
+
+.block {
+  display: block;
+}
+
+.max-full-width {
+  max-width: 100% !important
+}
+
+.full-width {
+  width: 100% !important;
+
+  .ant-modal-content {
+    width: 100%;
+  }
+}
+
+.full-height {
+  height: 100%;
+  flex: 1;
+}
+
+
+.no-wrap{
+  white-space: nowrap;
+}
+
+.grid-column-4{
+  display: grid;
+  column-gap: 1em;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.grid-column-3{
+  display: grid;
+  column-gap: 1em;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid-column-2{
+  display: grid;
+  column-gap: 1em;
+  grid-template-columns: 1fr 1fr ;
+}
+

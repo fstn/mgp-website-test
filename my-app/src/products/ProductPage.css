@@ -244,7 +244,6 @@
 .u-font-grey {
   color: #7c7c7c;
 }
-
 /* Animations */
 .fadeInUp {
   animation-name: fadeInUp;
@@ -252,13 +251,12 @@
 }
 @keyframes fadeInUp {
   from {
-    transform: translate3d(0,40px,0);
+    transform: translate3d(0, 40px, 0);
     opacity: 0;
   }
-
   to {
-    transform: translate3d(0,0,0);
-    opacity: 1
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
   }
 }
 .fadeIn {
@@ -271,7 +269,7 @@
     opacity: 0;
   }
   to {
-    opacity: 1
+    opacity: 1;
   }
 }
 .fadeInLeft {
@@ -280,13 +278,12 @@
 }
 @keyframes fadeInLeft {
   from {
-    transform: translate3d(-20px,0,0);
+    transform: translate3d(-20px, 0, 0);
     opacity: 0;
   }
-
   to {
-    transform: translate3d(0,0,0);
-    opacity: 1
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
   }
 }
 .fadeInDown {
@@ -295,13 +292,12 @@
 }
 @keyframes fadeInDown {
   from {
-    transform: translate3d(0,-40px,0);
+    transform: translate3d(0, -40px, 0);
     opacity: 0;
   }
-
   to {
-    transform: translate3d(0,0,0);
-    opacity: 1
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
   }
 }
 @media (max-width: 700px) {
@@ -330,4 +326,5 @@
     grid-column-end: 3;
   }
 }
+/*# sourceMappingURL=ProductPage.css.map */
 /*# sourceMappingURL=ProductPage.css.map */

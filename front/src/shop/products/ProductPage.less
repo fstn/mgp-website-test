@@ -1,0 +1,196 @@
+.product-content {
+  position: relative;
+  z-index: 100;
+  //background: #ebebeb;
+  background: #fafafa;
+  /* margin-top: 100vh; */
+}
+
+.page-section {
+  padding: 13rem 0;
+  border-bottom: 2.4px solid black;
+}
+
+.page-section__title {
+  font-size: 5.8rem;
+  line-height: 7.5rem;
+  margin-top: 0;
+  margin-bottom: 1.8rem;
+}
+
+.page-section__text {
+  font-size: 2.36rem;
+  margin: 0;
+  line-height: 3.2rem;
+}
+
+.mgp-quality__features {
+  margin-top: 6rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+  grid-row-gap: 3rem;
+}
+
+.mgp-quality__feature-title {
+  font-size: 2.4rem;
+  font-weight: bolder;
+  width: 12rem;
+  line-height: 3rem;
+  margin: 0;
+}
+
+.mgp-quality__feature-text {
+  max-width: 23rem;
+  font-size: 1.6rem;
+  margin-bottom: 0;
+  line-height: 2rem;
+}
+
+.mgp-gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 2rem;
+  grid-row-gap: 2rem;
+  padding-top: 3.5rem;
+  padding-bottom: 12rem;
+}
+
+.mask-image__info > * {
+  margin: 0;
+  padding-left: 52%;
+  font-size: 0.85rem;
+}
+
+.mgp-group-purchase__price-info {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: 30% 1fr;
+  grid-row-gap: 1rem;
+  grid-column-gap: 3rem;
+  font-size: 2.6rem;
+}
+
+.price-table__order-title {
+  font-size: 2.37rem;
+}
+
+.group-order__price-table {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-row-gap: 2rem;
+  font-size: 2.6rem;
+}
+
+.price-group > * {
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+.price {
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+.u-font-light {
+  font-weight: 200;
+}
+
+.u-font-medium {
+  font-weight: 400;
+}
+
+.u-font-bold {
+  font-weight: bolder;
+}
+
+.u-bottom-border {
+  border-bottom: 2.4px solid black;
+}
+
+.u-padding-bottom {
+  padding-bottom: 13rem;
+}
+
+.u-no-padding-bottom {
+  padding-bottom: 0;
+}
+
+.u-no-margin {
+  margin: 0 !important;
+}
+
+.u-no-bottom-border {
+  border-bottom: none;
+}
+
+.u-border-grey {
+  border-color: #f5f5f5;
+}
+
+.u-underline {
+  padding-bottom: 2px;
+  border-bottom: 1px solid black;
+}
+
+.u-underline-white {
+  border-bottom: 1px solid #f5f5f5;
+}
+
+.u-underline-grey {
+  border-bottom: 1px solid #7c7c7c;
+}
+
+.u-padding-horizontal-default {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.u-container {
+  overflow-x: visible;
+  z-index: 100;
+}
+
+.u-background-black {
+  background: black;
+}
+
+.u-white-background {
+  background: white !important;
+}
+
+.u-black-font {
+  color: black !important
+}
+
+.u-font-light-grey {
+  color: #f5f5f5;
+}
+
+.u-font-grey {
+  color: #7c7c7c;
+}
+
+
+@media (max-width: 768px) {
+  .group-order__price-table {
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  }
+
+  .mgp-group-purchase__price-info {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+/*
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+@media (min-width: 320px) and (max-width: 480px) {
+  .mgp-gallery > * {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+}
+
+/*# sourceMappingURL=ProductPage.css.map */

@@ -1,0 +1,204 @@
+
+.ant-input-number-handler-wrap {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  display: block;
+}
+
+
+.product-image {
+  height: fit-content;
+  display: flex;
+  align-content: center;
+  align-items: center;
+
+  img {
+    width: calc(100% + 40%);
+    min-width: calc(100% + 40%);
+    margin-left: -40%;
+    margin-top: 10px;
+  }
+}
+
+.product-container {
+  .ant-form-item {
+    text-align: left;
+  }
+
+  .ant-form-item {
+    margin-bottom: 2px;
+  }
+
+
+  .option-selector, .immediate-selector {
+    .ant-radio-group {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 60px;
+      gap: 1em;
+      width: 100%;
+    }
+
+
+    .option-selector-btn,
+    .color-selector-btn {
+      cursor: pointer;
+      width: 100%;
+
+      span {
+        width: 100%;
+      }
+    }
+
+  }
+
+  .color-selector {
+    .ant-radio-group {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1em 1em;
+      width: 100% !important;
+      margin-top: -1px;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .color-selector-btn {
+      cursor: pointer;
+      width: 100%;
+      height: fit-content;
+      padding: 0;
+    }
+
+
+  }
+
+  .quantity-selector {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1.4fr;
+    //grid-template-rows: 1fr;
+    grid-template-areas: ". . . .";
+    gap: 1em 1em;
+  }
+
+  .round-color {
+    background-color: rgb(255, 255, 255);
+    height: 32px;
+    width: 32px !important;
+    min-width: 32px !important;
+    display: block;
+    border-radius: 16px;
+    margin: 5px;
+    border: 1px solid #EEE;
+    flex: 0 0 32px;
+  }
+
+  .color-selector-btn__color-container {
+    height: 60px;
+  }
+
+  .ant-radio-button-wrapper {
+    min-width: 100%;
+  }
+
+  .color-selector-btn__color-container {
+    padding-right: 1em;
+    padding-left: 1em;
+  }
+
+  .color-selector-btn__color-container,
+  .option-selector-btn-container,
+  .immediate-selector-btn-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    grid-template-rows: 60px;
+    gap: 1fr;
+    grid-template-areas: "." ".";
+    justify-items: center;
+    align-items: center;
+    font-size: 12px;
+
+    > * {
+      width: 100%;
+    }
+
+    small {
+      text-align: right;
+      line-height: 1.4;
+      width: 100%;
+    }
+  }
+
+  .ant-form-item-label label {
+    font-weight: bold;
+    color: black;
+  }
+
+  .immediate-selector-btn-container {
+    grid-template-columns: 1fr 100px;
+  }
+
+  .quantity-selector-btn,
+  .color-selector-btn,
+  .immediate-selector-btn,
+  .option-selector-btn,
+  .ant-btn,
+  .ant-input-number-input,
+  .ant-input-number {
+    background: transparent;
+    height: 60px;
+    //color: rgba(0, 0, 0, 0.65);
+    font-size: 12px;
+    width: 100%;
+    text-align: center;
+
+    input {
+      margin-left: -20px;
+    }
+  }
+
+  .pay-btn {
+    font-size: 18px !important;
+    text-transform: uppercase;
+  }
+
+
+  .quantity-selector-btn {
+    align-items: center;
+    display: flex;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    align-self: center;
+
+    .ant-radio-button-wrapper-checked {
+
+    }
+  }
+
+  .quantity-selector,
+  .color-selector,
+  .color-selector,
+  .immediate-selector {
+    .ant-radio-button-wrapper {
+      height: 100%
+    }
+
+
+    .quantity-selector-btn :hover,
+    .color-selector-btn :hover,
+    .immediate-selector-btn :hover,
+    .option-selector-btn :hover {
+      border: gray;
+    }
+
+    .ant-radio-button-wrapper, .ant-btn, .ant-input-number, .ant-input-number > * {
+      background: transparent;
+    }
+  }
+}
